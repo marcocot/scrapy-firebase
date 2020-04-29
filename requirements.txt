@@ -1,2 +1,0 @@
-Scrapy>=1.4.0
-firebase-admin>=2.1.0
