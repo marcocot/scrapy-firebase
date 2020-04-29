@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "scrapy-firebase"
-version = "0.1.0"
+version = "0.2.0"
 description = "Pipeline to Firebase for Scrapy."
 authors = ["Marco Cotrufo <marco.cotrufo@devncode.it>", "Rodrigo Delduca <rodrigodelduca@gmail.com>"]
 license = "Apache-2.0"
@@ -17,8 +17,13 @@ classifiers = [
 python = "^3.6"
 scrapy = ">=1.4.0"
 firebase-admin = ">=2.1.0"
+black = {version = "^19.10b0", allow-prereleases = true}
 
 [tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
+flake8-quotes = "^3.0.0"
+flake8-black = "^0.1.1"
+flake8-strict = "^0.2.1"
 
 [build-system]
 requires = ["poetry>=0.12"]
