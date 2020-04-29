@@ -13,11 +13,6 @@ Configuration
 
 ### Basic configuration example
 
-Follow the steps on this [guide](https://firebase.google.com/docs/admin/setup), once you downloaded the json with firebase secrets, convert it to base64. On macos you can use the follwing command line to convert and copy to your clipboard:
-
-```bash
-cat firebase_secrets.json | openssl base64 | pbcopy
-```
 
 Add `scrapy-firebase` to your projects `settings.py` file and setup some variables.
 
@@ -26,9 +21,7 @@ ITEM_PIPELINES = [
   'scrapy_firebase.FirebasePipeline',
 ]
 
-FIREBASE_SECRETS = """
-  YOUR BASE64 ENCODED JSON HERE
-"""
+FIREBASE_CERTIFICATE = 'path to certificate.json'
 
 # Replace project-id to yours.
 FIREBASE_DATABASE = 'https://project-id.firebaseio.com/'
