@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "scrapy-firebase"
-version = "0.2.0"
+version = "0.3.0"
 description = "Pipeline to Firebase for Scrapy."
 authors = ["Marco Cotrufo <marco.cotrufo@devncode.it>", "Rodrigo Delduca <rodrigodelduca@gmail.com>"]
 license = "Apache-2.0"

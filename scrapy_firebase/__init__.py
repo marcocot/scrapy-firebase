@@ -21,7 +21,7 @@ class FirebasePipeline(BaseItemExporter):
 
         filename = path.normpath(path.join(getcwd(), 'firebase_secrets.json'))
         with open(filename, 'w') as json_file:
-            json_file.write(b64decode(self.settings['FIREBASE_SECRETS']))
+            json_file.write(b64decode(self.settings['FIREBASE_SECRETS']).decode('utf-8'))
 
         configuration = {
             'credential': credentials.Certificate(filename),
